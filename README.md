@@ -27,11 +27,13 @@ import joi from 'joi';
 import { resolve } from 'node:path';
 import { createTask } from 'ollamer';
 
+// argument for our function
 export type Input = {
   title: string;
   article: string;
 };
 
+// expected output format for out function
 export type Relevance = {
   related: boolean;
   confidence: number;
