@@ -9,6 +9,7 @@ run-name: "release-please #${{ github.run_number }}"
 permissions:
   contents: write
   pull-requests: write
+  issues: write
 
 jobs:
   release-please:
@@ -18,4 +19,4 @@ jobs:
       - uses: google-github-actions/release-please-action@v3
         with:
           release-type: node
-          package-name: 'ollamer'
+          package-name: "ollamer"
