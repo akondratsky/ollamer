@@ -1,3 +1,6 @@
+/**
+ * @private
+ */
 export const flattenOutput = (value: unknown) => {
   const result = {};
   flattenize(result, value, 'output');

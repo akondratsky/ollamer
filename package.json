@@ -1,6 +1,6 @@
 {
   "name": "ollamer",
-  "version": "0.0.1-beta.3",
+  "version": "0.0.1",
   "description": "File tree template engine",
   "repository": {
     "type": "git",
