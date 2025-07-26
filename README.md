@@ -81,13 +81,13 @@ Use this task as it is usual asynchronous function:
 
 ```ts
 // src/index.ts
-import summarize, type { Input, Relevance } from './tasks/summarize';
+import summarizeTask, type { Input, Relevance } from './tasks/summarize';
 import type { Result } from 'ollamer';
 
 const title = 'Using Ollama never was so convenient!';
 const article = ` ... your articles are beautiful ... `;
 
-const result: Result<Input, Relevance> = await summarize({
+const result: Result<Input, Relevance> = await summarizeTask.run({
   title,
   article,
 });
