@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/akondratsky/ollamer/compare/v1.0.0...v1.0.1) (2025-07-26)
+
+
+### Bug Fixes
+
+* add readme file to the published package ([d5ffcda](https://github.com/akondratsky/ollamer/commit/d5ffcdad464b58c0c93cda026d3d754b4cd8ec86))
+
 ## 1.0.0 (2025-07-26)
 
 
