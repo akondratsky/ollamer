@@ -6,7 +6,7 @@ import { compile } from 'handlebars';
 import type { Config, ExtendedConfig } from './types.js';
 
 export const createTask = <
-  InputType extends void | Record<string, unknown>,
+  InputType extends (undefined | Record<string, unknown>),
   OutputType = string,
 >(config: Config) => {
   const extendedConfig: ExtendedConfig = {

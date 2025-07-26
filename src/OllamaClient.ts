@@ -22,7 +22,7 @@ export class OllamaClient {
    * @returns
    */
   public async chat(chatParams: ChatParams): Promise<Result> {
-    let allowedAttempts = chatParams.retries + 1;
+    const allowedAttempts = chatParams.retries + 1;
     let response: ChatResponse | null = null;
     let error: Error | null = null;
     let attempts = 1;

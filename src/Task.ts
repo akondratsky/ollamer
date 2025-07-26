@@ -17,12 +17,12 @@ export class Task<
   }
 
   public async run(input: InputType): Promise<Result<InputType, OutputType>> {
-    let startTime = Date.now();
+    const startTime = Date.now();
     let response: ChatResponse | null = null;
     let error: Error | null = null;
     let output: OutputType | null = null;
     let isValidJson: boolean | null = null;
-    let success: boolean = true;
+    let success = true;
     let attempts = 0;
     const request = {
       model: this.config.model,

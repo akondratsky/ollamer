@@ -19,10 +19,10 @@ export type Config = {
 
   log?: boolean;
 
-  templates: Array<{
+  templates: {
     role: 'system' | 'user' | 'assistant';
     filename: string;
-  }>;
+  }[];
 };
 
 type MessageTemplate = {

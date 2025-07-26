@@ -1,10 +1,10 @@
-export const flattenOutput = (value: any) => {
+export const flattenOutput = (value: unknown) => {
   const result = {};
   flattenize(result, value, 'output');
   return result;
 };
 
-const flattenize = (object: Record<string, unknown>, value: any, prefix: string) => {
+const flattenize = (object: Record<string, unknown>, value: unknown, prefix: string) => {
   if (Array.isArray(value)) {
     value.forEach((item, index) => {
       flattenize(object, item, `${prefix}_${index}`);
