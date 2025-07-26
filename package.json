@@ -1,16 +1,15 @@
 {
   "name": "ollamer",
   "version": "1.0.0",
-  "description": "File tree template engine",
+  "description": "Ollama wrapper to create function-like prompts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/akondratsky/ollamer.git"
   },
   "keywords": [
-    "generator",
-    "templates",
-    "files",
-    "tree"
+    "ollama",
+    "prompt",
+    "wrapper"
   ],
   "type": "module",
   "author": "Aleksandr Kondratskii",

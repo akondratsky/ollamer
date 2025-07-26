@@ -2,10 +2,12 @@
   "compilerOptions": {
     "composite": true,
     "outDir": "./dist",
-    
-    "lib": ["ESNext"],
-    "types": ["bun-types"],
-
+    "lib": [
+      "ESNext"
+    ],
+    "types": [
+      "bun-types"
+    ],
     "strict": true,
     "esModuleInterop": true,
     "experimentalDecorators": true,
@@ -14,10 +16,13 @@
   },
   "references": [
     {
-      "path": "tsconfig.lib.json"
+      "path": "./tsconfig.lib.json"
     },
     {
-      "path": "tsconfig.test.json"
+      "path": "./tsconfig.test.json"
+    },
+    {
+      "path": "./tsconfig.script.json"
     }
   ]
 }

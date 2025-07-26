@@ -1,10 +1,11 @@
-import fs from 'node:fs';
+import { copyFileSync, readFileSync, writeFileSync } from 'node:fs';
 
-fs.copyFileSync('./.npmignore', './dist/.npmignore');
-fs.copyFileSync('./LICENSE', './dist/LICENSE');
+copyFileSync('./.npmignore', './dist/.npmignore');
+copyFileSync('./LICENSE', './dist/LICENSE');
+copyFileSync('./README.md', './dist/README.md');
 
 const packageJson = {
-  ...JSON.parse(fs.readFileSync('package.json', 'utf-8')),
+  ...JSON.parse(readFileSync('package.json', 'utf-8')),
   module: 'index.js',
   types: 'index.d.ts',
   exports: {
@@ -18,4 +19,4 @@ const packageJson = {
 delete packageJson.devDependencies;
 delete packageJson.scripts;
 
-fs.writeFileSync('./dist/package.json', JSON.stringify(packageJson, null, 2), 'utf-8');
+writeFileSync('./dist/package.json', JSON.stringify(packageJson, null, 2), 'utf-8');
