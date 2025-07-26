@@ -1,0 +1,14 @@
+# Changelog
+
+## 1.0.0 (2025-07-26)
+
+
+### Features
+
+* add current implementation with minor changes ([b674880](https://github.com/akondratsky/ollamer/commit/b67488034155b5e522cff5a4bc351ab2a7ff29f4))
+
+
+### Bug Fixes
+
+* add lost changes ([5c19727](https://github.com/akondratsky/ollamer/commit/5c19727b73763e0133eebec054876c368a7b4eb9))
+* init commit ([355a9d0](https://github.com/akondratsky/ollamer/commit/355a9d09311f0cb78241f8474e9b76d46c41ba92))
